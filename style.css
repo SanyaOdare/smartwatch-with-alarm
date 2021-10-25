@@ -17,10 +17,57 @@ body, html {
 }
 
 #clock {
-  font-family: 'Orbitron' sans-serif;
-  font-size: 15vw;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10vw;
   background-image: linear-gradient(180deg,
     rgba(99,253,136,1) 0%,
     rgba(51,197,142,1) 50%,
-    rgba(39,97,116,1) 100%,);
+    rgba(39,97,116,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.controls {
+  margin-top: 16px;
+}
+
+input {
+  font-size: 1vw;
+}
+
+.button {
+  /* font-weight: bold; */
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 14px 25px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.set-alarm {
+  background-color: #498AFB;
+}
+
+.clear-alarm {
+  background-color: #ff3860;
+}
+
+@media screen and (max-width: 1280px) {
+  #clock {
+    font-size: 10vw;
+  }
+
+  input {
+    font-size: 2vw;
+  }
+
+  .button {
+    font-size: 11px;
+    
+  }
 }
